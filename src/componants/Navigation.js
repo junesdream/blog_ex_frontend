@@ -28,7 +28,9 @@ const Navigation = () => {
 					<li className="topListItem">Write</li>
 					<li className="topListItem">Faces</li> */}
 
-					<li className="navListItem">
+					{/* neue Versuch warte! */}
+
+					{/* <li className="navListItem">
 						<Link to="/" className="link">
 							Stories
 						</Link>
@@ -42,7 +44,31 @@ const Navigation = () => {
 						<Link to="/" className="link">
 							Faces
 						</Link>
+					</li> */}
+
+					<li className="navListItem">
+						<Link to="/write" className="link">
+							Write
+						</Link>
 					</li>
+					<li className="navListItem">
+						<Link to="/gallery" className="link">
+							Snaps
+						</Link>
+					</li>
+					<li className="navListItem">
+						<Link to="/" className="link">
+							Gallery
+						</Link>
+					</li>
+
+					<li className="navListItem">
+						<Link to="/music" className="link">
+							Music
+						</Link>
+					</li>
+					
+
 					<li className="navListItem" onClick={handleLogout}>
 						{user && "LOGOUT"}
 					</li>
@@ -51,11 +77,7 @@ const Navigation = () => {
 			<div className="navRight">
 				{user ? (
 					<Link to="/settings">
-						<img
-							className="navImg"
-							src={user.profilePic}
-							alt=""
-						/>
+						<img className="navImg" src={user.profilePic} alt="" />
 					</Link>
 				) : (
 					<ul className="navList">

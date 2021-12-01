@@ -1,14 +1,29 @@
 import React from 'react'
-// import ReactPlayer from "react-player";
-import ReactPlayer from "react-player/youtube";
+import "./Music.css";
+// import { useState } from "react";
+import Header from "../componants/Header";
+// import Posts from "../componants/Posts";
+import Sidebar from "../componants/Sidebar";
+import TrackPlayer from "../componants/TrackPlayer";
+
 
 const Music = () => {
+    // const [posts, setPosts] = useState([]);
     return (
-		<div>
-			{/* <ReactPlayer url="https://www.youtube.com/watch?v=ysz5S6PUM-U" /> */}
-			<ReactPlayer url="https://www.youtube.com/watch?v=ysz5S6PUM-U" />
-		</div>
+		<>
+			<div>
+				<Header />
+				<TrackPlayer />
+				<div className="music">
+					<TrackPlayer />
+					{/* <Posts posts={posts} /> */}
+
+					<Sidebar />
+				</div>
+			</div>
+		</>
 	);
 }
+
 
 export default Music

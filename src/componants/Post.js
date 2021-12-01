@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // import { FaExclamationCircle } from 'react-icons/fa';
 
 const Post = ({ post }) => {
-	// console.log(post);
+	console.log("post", post);
 	const PF = "http://localhost:8030/images/";
 	return (
 		<div className="postContainer">

@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 import { useState, useContext } from "react";
-import "./Write.css";
+import "./Snaps.css";
 import { FaPhotoVideo } from "react-icons/fa";
 import axios from "axios";
 import { Context } from "../context/Context";
 
-const Write = () => {
+const Snaps = () => {
 	const [title, setTitle] = useState("");
 	const [desc, setDesc] = useState("");
 	const [file, setFile] = useState(null);
@@ -46,10 +46,11 @@ const Write = () => {
 			console.log("res data id", res.data._id);
 			console.log("test");
 			window.location.replace("/post/", +res.data._id);
+            // window.location.redirect("/post/", +res.data._id);
 		} catch (err) {
 			console.log("posterr:", err);
 		}
-		
+
 		// axios
 		// .post("http://localhost:8030/api/upload", {data})
 		// .then((res) => console.log(res))
@@ -94,7 +95,7 @@ const Write = () => {
 				</div>
 				<div className="writeFormGroup">
 					<textarea
-						placeholder="Tell your story..."
+						placeholder="Your comment..."
 						type="text"
 						className="writeInput writeText"
 						onChange={(e) => setDesc(e.target.value)}
@@ -108,4 +109,4 @@ const Write = () => {
 	);
 };
 
-export default Write;
+export default Snaps;

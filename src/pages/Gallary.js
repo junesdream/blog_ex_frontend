@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import { useEffect, useState } from "react";
 import "./Home.css";
 // import { useLocation } from "react-router";
@@ -6,9 +6,8 @@ import Header from "../componants/Header";
 import Posts from "../componants/Posts";
 import Sidebar from "../componants/Sidebar";
 import axios from "axios";
-import TrackPlayer from "../componants/TrackPlayer";
 
-const Home = () => {
+const Gallary = () => {
 	const [posts, setPosts] = useState([]);
 	// const { search } = useLocation();
 	useEffect(() => {
@@ -28,8 +27,7 @@ const Home = () => {
 	return (
 		<>
 			<Header />
-			<TrackPlayer />
-			<div className="home">
+			<div className="faces">
 				<Posts posts={posts} />
 				<Sidebar />
 			</div>
@@ -37,4 +35,5 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default Gallary;
+
