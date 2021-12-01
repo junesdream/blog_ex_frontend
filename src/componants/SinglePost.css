@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bowlby+One+SC&family=Electrolize&family=Faster+One&family=Fruktur&family=Josefin+Sans:wght@600&family=Julius+Sans+One&family=Kings&family=Luckiest+Guy&family=Mochiy+Pop+One&family=Nosifer&family=Patrick+Hand&family=Poiret+One&family=Sigmar+One&family=Varela&display=swap');
+
+
+.singlePost {
+    flex: 9;
+    height: 70vw;
+}
+
+.singlePostWrapper {
+    padding: 20px;
+    padding-right: 0;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.singlePostImg {
+  width: 100%;
+  height: 300px;  
+  border-radius: 5px; 
+}
+
+.singlePostTitle {
+    text-align: center;
+    margin: 10px;
+    font-family: "Lora", serif;
+    font-size: 28px;
+}
+
+.singlePostTitleInput {
+    text-align: center;
+    margin: 10px;
+    font-family: "Lora", serif;
+    font-size: 28px;
+    border: none;
+    color: grey;
+    border-bottom: 1px solid lightgrey;
+}
+
+.singlePostTitleInput:focus{
+ outline: none;
+}
+
+.singlePostEdit {
+    float: right;
+    font-size: 16px;
+}
+
+.singlePostIcon {
+   margin-left: 10px; 
+   cursor: pointer;
+}
+
+.singlePostIcon1 {
+    color: teal;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.singlePostIcon2 {
+    color: tomato;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.singlePostInfo {
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: 'Varela Round', sans-serif;
+    color: #302f2d;
+}
+
+.singlePostDesc {
+    color: rgb(61, 57, 57);
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.singlePostDesc:first-letter {
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.singlePostDescInput {
+    border: none;
+     color: rgb(61, 57, 57);
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.singlePostDescInput:focus {
+    outline: none;
+}
+
+.singlePostButton {
+    border: none;
+    width: 100px;
+    background-color: teal;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+  
+
+
