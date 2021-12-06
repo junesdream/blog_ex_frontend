@@ -6,7 +6,6 @@ import Header from "../componants/Header";
 import Posts from "../componants/Posts";
 import Sidebar from "../componants/Sidebar";
 import axios from "axios";
-import TrackPlayer from "../componants/TrackPlayer";
 
 const Home = () => {
 	const [posts, setPosts] = useState([]);
@@ -14,21 +13,27 @@ const Home = () => {
 	useEffect(() => {
 		axios
 			.get("http://localhost:8030/api/posts")
-			.then((res) => setPosts(res.data))
+			// .then((res) => setPosts(res.data))
+			.then((res) => {
+			
+				setPosts(res.data);
+			})
 			.catch((err) => console.log(err));
 		// const fetchPosts = async () => {
 		// 	const res = await axios.get("http://localhost:8030/api/posts'");
 		// 	setPosts(res.data);
 		// };
 		// fetchPosts();
+		// console.log(posts);
 	}, []);
+
 
 	// const location = useLocation();
 	// console.log(location);
 	return (
 		<>
 			<Header />
-			<TrackPlayer />
+
 			<div className="home">
 				<Posts posts={posts} />
 				<Sidebar />

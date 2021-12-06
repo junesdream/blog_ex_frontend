@@ -1,12 +1,8 @@
 .loginContainer {
-	background-image: linear-gradient(
-			to bottom,
-			rgba(255, 255, 255, 0) 0%,
-			rgba(255, 255, 255, 0) 100%
-		),
-		url(https://images.pexels.com/photos/1558690/pexels-photo-1558690.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+	background-image: 
+		url(https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
 	background-size: cover;
-
+	height: 100vh;
 }
 .login {
 	/* height: calc(100% - 50px); */
@@ -19,14 +15,17 @@
 }
 
 .loginTitle {
-	top: 100px;
+	top: 50px;
 	font-size: 50px;
+	color: #0048BA;
 }
 
 .loginForm {
-	margin-top: 200px;
+	margin-top: 80px;
 	display: flex;
 	flex-direction: column;
+	color: #FF007C;
+
 }
 
 .loginForm > label {
@@ -36,17 +35,36 @@
 .loginInput {
 	padding: 10px;
 	background-color: white;
-	border: none;
+	border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
 }
 
 .loginButton {
 	margin-top: 20px;
 	cursor: pointer;
-	background-color: lightcoral;
+	background-color: #FF007C;
 	border: none;
 	color: white;
 	border-radius: 10px;
 	padding: 10px;
+	border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1
 }
 
 .loginBUtton:disabled {
@@ -62,6 +80,16 @@
 	cursor: pointer;
 	border: none;
 	color: white;
-	padding: 10px;
+	padding: 7px;
 	border-radius: 10px;
+	border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1
 }

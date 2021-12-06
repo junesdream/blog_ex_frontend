@@ -7,6 +7,7 @@ import { Context } from "../context/Context";
 
 const Navigation = () => {
 	const { user, dispatch } = useContext(Context);
+	const PF = "http://localhost:8030/images/";
 
 	const handleLogout = () => {
 		dispatch({ type: "LOGOUT" });
@@ -52,12 +53,12 @@ const Navigation = () => {
 						</Link>
 					</li>
 					<li className="navListItem">
-						<Link to="/gallery" className="link">
+						<Link to="/snaps" className="link">
 							Snaps
 						</Link>
 					</li>
 					<li className="navListItem">
-						<Link to="/" className="link">
+						<Link to="/gallery" className="link">
 							Gallery
 						</Link>
 					</li>
@@ -67,7 +68,6 @@ const Navigation = () => {
 							Music
 						</Link>
 					</li>
-					
 
 					<li className="navListItem" onClick={handleLogout}>
 						{user && "LOGOUT"}
@@ -77,7 +77,7 @@ const Navigation = () => {
 			<div className="navRight">
 				{user ? (
 					<Link to="/settings">
-						<img className="navImg" src={user.profilePic} alt="" />
+						<img className="navImg" src={PF+user.profilePic} alt="" />
 					</Link>
 				) : (
 					<ul className="navList">

@@ -1,12 +1,21 @@
 * {
- margin: 0;
- position: relative;
- overflow: scroll;
- scroll-behavior: smooth;
+	margin: 0;
+	position: relative;
+	/* overflow: auto; */
+	scroll-behavior: smooth;
 }
 
-body {
+/* body {
    background-image: radial-gradient(circle, #e0ffff, #e4fdff, #e9fcff, #eefaff, #f3f9ff, #f2f6fc, #f1f2f8, #efeff4, #e8e8ec, #e1e1e3, #dadadb, #d3d3d3);
+} */
+
+/* * body {
+    background:linear-gradient(90deg, Red, Orange, Yellow, Green, Blue, Indigo,violet);
+  
+} */
+
+* body {
+	background-color: #000000;
 }
 
 /* Navigation CSS */

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // import { FaExclamationCircle } from 'react-icons/fa';
 
 const Post = ({ post }) => {
-	console.log("post", post);
+	// console.log("post", post);
 	const PF = "http://localhost:8030/images/";
 	return (
 		<div className="postContainer">
@@ -19,7 +19,7 @@ const Post = ({ post }) => {
 						))}
 					</div>
 					<Link to={`/post/${post._id}`} className="link">
-						<span className="postTitle">{post.title}</span>{" "}
+						<span className="postTitle">{post.title}</span>
 					</Link>
 					<hr />
 					<span className="postDate">

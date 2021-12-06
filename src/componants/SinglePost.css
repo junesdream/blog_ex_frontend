@@ -1,110 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bowlby+One+SC&family=Electrolize&family=Faster+One&family=Fruktur&family=Josefin+Sans:wght@600&family=Julius+Sans+One&family=Kings&family=Luckiest+Guy&family=Mochiy+Pop+One&family=Nosifer&family=Patrick+Hand&family=Poiret+One&family=Sigmar+One&family=Varela&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Bowlby+One+SC&family=Electrolize&family=Faster+One&family=Fruktur&family=Josefin+Sans:wght@600&family=Julius+Sans+One&family=Kings&family=Luckiest+Guy&family=Mochiy+Pop+One&family=Nosifer&family=Patrick+Hand&family=Poiret+One&family=Sigmar+One&family=Varela&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=Darker+Grotesque:wght@300&family=Monoton&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
 
 
 .singlePost {
-    flex: 9;
-    height: 70vw;
+	flex: 9;
+	height: 100vw;
 }
 
 .singlePostWrapper {
-    padding: 20px;
-    padding-right: 0;
-    top: 10%;
-    display: flex;
-    flex-direction: column;
+	padding: 20px;
+	padding-right: 0;
+	top: 3.5em;
+	display: flex;
+	flex-direction: column;
 }
 
 .singlePostImg {
-  width: 100%;
-  height: 300px;  
-  border-radius: 5px; 
+	width: 100%;
+	height: 300px;
+	border-radius: 5px;
+	border: 2px outset yellowgreen;
 }
 
 .singlePostTitle {
-    text-align: center;
-    margin: 10px;
-    font-family: "Lora", serif;
-    font-size: 28px;
+	text-align: center;
+	margin: 10px;
+	font-family: "Arima Madurai";
+	font-size: 28px;
+	background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+.singlePostAutor{
+	color: #9C51B6;
+}
+
+.singlePostDate{
+	color: #2243B6;
+}
+
 
 .singlePostTitleInput {
-    text-align: center;
-    margin: 10px;
-    font-family: "Lora", serif;
-    font-size: 28px;
-    border: none;
-    color: grey;
-    border-bottom: 1px solid lightgrey;
+	text-align: center;
+	margin: 20px;
+	font-family: "Arima Madurai";
+	font-size: 28px;
+	border: 4px groove yellowgreen;
+	color: #CCFF00;
+	
 }
 
-.singlePostTitleInput:focus{
- outline: none;
+.singlePostTitleInput:focus {
+	outline: none;
 }
 
 .singlePostEdit {
-    float: right;
-    font-size: 16px;
+	float: right;
+	font-size: 16px;
 }
 
 .singlePostIcon {
-   margin-left: 10px; 
-   cursor: pointer;
+	margin-left: 10px;
+	cursor: pointer;
 }
 
 .singlePostIcon1 {
-    color: teal;
-    padding: 5px;
-    font-size: 20px;
+	color: yellowgreen;
+	padding: 5px;
+	margin-right: 10px;
+	width: 30px;
+    height: 30px;
+	border: 3px solid transparent; 
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
 }
 
 .singlePostIcon2 {
-    color: tomato;
-    padding: 5px;
-    font-size: 20px;
+	color: #FF007C;
+	padding: 5px;
+	width: 30px;
+    height: 30px;
+	border: 2px solid ;
 }
 
 .singlePostInfo {
-    margin-bottom: 20px;
-    display:flex;
-    justify-content: space-between;
-    font-size: 16px;
-    font-family: 'Varela Round', sans-serif;
-    color: #302f2d;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	font-family: "Varela Round", sans-serif;
+	color: #302f2d;
 }
 
 .singlePostDesc {
-    color: rgb(61, 57, 57);
-    font-size: 18px;
-    line-height: 25px;
+	font-size: 18px;
+	line-height: 25px;
+	background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .singlePostDesc:first-letter {
-    margin-left: 20px;
-    font-size: 30px;
-    font-weight: 600;
+	margin-left: 20px;
+	font-size: 30px;
+	font-weight: 600;
 }
 
 .singlePostDescInput {
-    border: none;
-     color: rgb(61, 57, 57);
-    font-size: 18px;
-    line-height: 25px;
+	border: 3px groove yellowgreen;
+	color: #CCFF00;
+	font-size: 18px;
+	/* line-height: 25px; */
 }
 
 .singlePostDescInput:focus {
-    outline: none;
+	outline: none;
 }
 
 .singlePostButton {
-    border: none;
-    width: 100px;
-    background-color: teal;
-    padding: 5px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    align-self: flex-end;
+	width: 100px;
+	background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+	padding: 5px;
+	margin-top: 30px;
+	color: white;
+	border: 3px solid;
+	border-radius: 5px;
+	cursor: pointer;
+	align-self: flex-end;
 }
-  
-
-

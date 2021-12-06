@@ -10,33 +10,34 @@ const Login = () => {
 	const passwordRef = useRef();
 	const { dispatch, isFetching } = useContext(Context);
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 		dispatch({ type: "LOGIN_START" });
 
-	
-		axios
-			.post("http://localhost:8030/api/auth/login", {
-				username: userRef.current.value,
-				password: passwordRef.current.value,
-			})
-			.then((res) => {
-				console.log(res);
-				dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
-			})
-			.catch((err) => {
-				console.log(err);
-				dispatch({ type: "LOGIN_FAILURE" });
-			});
-		// try {
-		// 	const res = await axios.post("http://localhost:8030/api/auth/login", {
+		// axios
+		// 	.post("http://localhost:8030/api/auth/login", {
 		// 		username: userRef.current.value,
 		// 		password: passwordRef.current.value,
 		// 	})
-		// 	dispatch({ type:"LOGIN_SUCCESS", payload:res.data });
-		// } catch(err) {
-		// 	dispatch({ type: "LOGIN_FAILURE" });
-		// }
+		// 	.then((res) => {
+		// 		console.log(res);
+		// 		dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
+		// 	})
+		// 	.catch((err) => {
+		// 		console.log(err);
+		// 		dispatch({ type: "LOGIN_FAILURE" });
+		// 	});
+
+		try {
+			const res = await axios.post("http://localhost:8030/api/auth/login", {
+				username: userRef.current.value,
+				password: passwordRef.current.value,
+			});
+			dispatch({ type:"LOGIN_SUCCESS", payload:res.data });
+		} catch(err) {
+			dispatch({ type: "LOGIN_FAILURE" });
+		}
+
 	};
 
 	return (

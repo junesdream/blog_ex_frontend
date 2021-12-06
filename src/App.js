@@ -7,13 +7,16 @@ import Settings from "./pages/Settings";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
+import Music from "./pages/Music";
+import Snaps from "./pages/Snaps";
+import Gallary from "./pages/Gallery";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
 
 function App() {
 	const { user } = useContext(Context);
-	
+
 	return (
 		<Router>
 			<Navigation />
@@ -24,11 +27,19 @@ function App() {
 				<Route path="/register">{user ? <Home /> : <Register />}</Route>
 				<Route path="/login">{user ? <Home /> : <Login />}</Route>
 				<Route path="/post/:postId">
-					<Single /> </Route>
+					<Single />
+				</Route>
 				<Route path="/write">{user ? <Write /> : <Login />}</Route>
-				<Route path="/settings">{user ? <Settings /> : <Register />}</Route>
+				<Route path="/settings">
+					{user ? <Settings /> : <Register />}
+				</Route>
+				<Route path="/music">{user ? <Music /> : <Register />}</Route>
+				<Route path="/snaps">{user ? <Snaps /> : <Register />}</Route>
+				<Route path="/gallery">
+					{user ? <Gallary /> : <Register />}
+				</Route>
 			</Switch>
-			<Footer />			
+			<Footer />
 		</Router>
 	);
 }

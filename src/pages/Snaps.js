@@ -1,15 +1,18 @@
-import React from 'react'
+import React from "react";
 import { useState, useContext } from "react";
 import "./Snaps.css";
-import { FaPhotoVideo } from "react-icons/fa";
+import { FaCameraRetro } from "react-icons/fa";
 import axios from "axios";
 import { Context } from "../context/Context";
+import { useHistory } from "react-router-dom";
 
 const Snaps = () => {
 	const [title, setTitle] = useState("");
 	const [desc, setDesc] = useState("");
 	const [file, setFile] = useState(null);
 	const { user } = useContext(Context);
+
+	const history = useHistory();
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
@@ -38,15 +41,21 @@ const Snaps = () => {
 		}
 
 		try {
+			// const res = await axios.post(
+			// 	"http://localhost:8030/api/posts",
+			// 	newPost
+			// );
+
 			const res = await axios.post(
-				"http://localhost:8030/api/posts",
+				"http://localhost:8030/api/snaps",
 				newPost
 			);
+
 			// const res = await axios.post("/posts", newPost);
 			console.log("res data id", res.data._id);
 			console.log("test");
-			window.location.replace("/post/", +res.data._id);
-            // window.location.redirect("/post/", +res.data._id);
+			// window.location.replace("/post/", +res.data._id);
+			// window.location.redirect("/post/", +res.data._id);
 		} catch (err) {
 			console.log("posterr:", err);
 		}
@@ -62,21 +71,24 @@ const Snaps = () => {
 		// 		.then((res) => window.location.replace("/post/", +res.data._id))
 		// 		.catch((err) => console.log(err));
 		// }
+		history.push("/gallery");
 	};
 
 	return (
-		<div className="write">
+		<div className="snaps">
+			<h2>Any best portrait from the floor? </h2>
+			<br />
 			{file && (
 				<img
-					className="wirteImg"
+					className="snapsImg"
 					src={URL.createObjectURL(file)}
 					alt=""
 				/>
 			)}
-			<form className="writeForm" onSubmit={handleSubmit}>
-				<div className="writeFormGroup">
+			<form className="snapsForm" onSubmit={handleSubmit}>
+				<div className="snapsFormGroup">
 					<label htmlFor="fileInput">
-						<FaPhotoVideo className="writeIcon" />
+						<FaCameraRetro className="snapsIcon" />
 					</label>
 					<input
 						type="file"
@@ -93,15 +105,15 @@ const Snaps = () => {
 						onChange={(e) => setTitle(e.target.value)}
 					/>
 				</div>
-				<div className="writeFormGroup">
+				<div className="snapsFormGroup">
 					<textarea
 						placeholder="Your comment..."
 						type="text"
-						className="writeInput writeText"
+						className="snapsInput snpasText"
 						onChange={(e) => setDesc(e.target.value)}
 					></textarea>
 				</div>
-				<button className="writeSubmit" type="submit">
+				<button className="snapsSubmit" type="submit">
 					Publish
 				</button>
 			</form>

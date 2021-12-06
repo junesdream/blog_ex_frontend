@@ -4,12 +4,15 @@ import "./Write.css";
 import { FaPhotoVideo } from "react-icons/fa";
 import axios from "axios";
 import { Context } from "../context/Context";
+import { useHistory } from "react-router-dom";
 
 const Write = () => {
 	const [title, setTitle] = useState("");
 	const [desc, setDesc] = useState("");
 	const [file, setFile] = useState(null);
 	const { user } = useContext(Context);
+
+	const history = useHistory();
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
@@ -45,11 +48,11 @@ const Write = () => {
 			// const res = await axios.post("/posts", newPost);
 			console.log("res data id", res.data._id);
 			console.log("test");
-			window.location.replace("/post/", +res.data._id);
+			// window.location.replace("/", +res.data._id);
 		} catch (err) {
 			console.log("posterr:", err);
 		}
-		
+
 		// axios
 		// .post("http://localhost:8030/api/upload", {data})
 		// .then((res) => console.log(res))
@@ -61,6 +64,7 @@ const Write = () => {
 		// 		.then((res) => window.location.replace("/post/", +res.data._id))
 		// 		.catch((err) => console.log(err));
 		// }
+		history.push("/");
 	};
 
 	return (
@@ -76,6 +80,7 @@ const Write = () => {
 				<div className="writeFormGroup">
 					<label htmlFor="fileInput">
 						<FaPhotoVideo className="writeIcon" />
+						<i class="fas fa-camera fa-5x"></i>
 					</label>
 					<input
 						type="file"

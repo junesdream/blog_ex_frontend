@@ -4,8 +4,9 @@
 			rgba(255, 255, 255, 0) 0%,
 			rgba(255, 255, 255, 0) 100%
 		),
-		url(https://images.pexels.com/photos/1109543/pexels-photo-1109543.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-	background-size: cover;
+		url(https://images.pexels.com/photos/4740492/pexels-photo-4740492.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background-size: contain;
+	height: 100vh;
 }
 .register {
 	/* height: calc(100% - 50px); */
@@ -14,28 +15,49 @@
 	align-items: center;
 	justify-content: center;
 	/* margin-top: 100px; */
-	margin-bottom: 30%;
+	margin-bottom: 20px;
 }
 
 .registerTitle {
 	font-size: 50px;
-	margin-top: 100px;
+	margin-top: 50px;
+	background-image: linear-gradient(
+		to left,
+		violet,
+		indigo,
+		blue,
+		green,
+		yellow,
+		orange,
+		red
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .registerForm {
-	margin-top: 50px;
+	margin-top: 10px;
 	display: flex;
 	flex-direction: column;
 }
 
 .registerForm > label {
-	margin: 10px 0;
+	margin: 0px 0;
 }
 
 .registerInput {
-	padding: 10px;
+	padding: 5px;
 	background-color: white;
-	border: none;
+	border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
 }
 
 .registerButton {
@@ -46,16 +68,36 @@
 	color: white;
 	border-radius: 10px;
 	padding: 10px;
+	border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
 }
 
 .registerLoginButton {
 	position: absolute;
 	top: 15%;
-	right: 20px;
-	background-color: lightcoral;
+	right: 40px;
+	background-color: #ff3399;
 	cursor: pointer;
 	border: none;
 	color: white;
-	padding: 10px;
+	padding: 0px 10px;
 	border-radius: 10px;
+	border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
 }

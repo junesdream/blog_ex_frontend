@@ -1,55 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Bowlby+One+SC&family=Faster+One&family=Fruktur&family=Josefin+Sans:wght@600&family=Julius+Sans+One&family=Kings&family=Luckiest+Guy&family=Mochiy+Pop+One&family=Nosifer&family=Patrick+Hand&family=Poiret+One&family=Sigmar+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Bowlby+One+SC&family=Faster+One&family=Fruktur&family=Josefin+Sans:wght@600&family=Julius+Sans+One&family=Kings&family=Luckiest+Guy&family=Mochiy+Pop+One&family=Nosifer&family=Patrick+Hand&family=Poiret+One&family=Sigmar+One&family=Varela&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=Monoton&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=Darker+Grotesque:wght@300&family=Libre+Barcode+39+Text&family=Monoton&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
 .sidebar {
 	/* flex: 3; */
+	top: 100px;
     float: right;
-	/* margin: 20px; */
-	padding-bottom: 30px;
-	border-radius: 10px;
+	/* margin: 10px; */
+	padding: 10px;
+	/* padding-bottom: 30px; */
 	display: block;
 	align-items: center;
 	height: 70%;
     width: 30%;
+	margin-right: 10px;
+	/* margin-left: 10px; */
 }
 
 .sidebarImg {
-    width: 50%;
+	bottom:10px;
+    width: 60%;
     height: 50%;
+	border-radius: 20%;
 }
 .sidebarItem {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	/* top: 10px; */
 }
 
 .sidebarTitle {
-	margin: 10px;
+	margin: 5px;
 	padding: 5px;
 	width: 80%;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
+	border-top: 1px solid yellowgreen;
+	border-bottom: 1px solid yellowgreen;
 	font-family: "Varela";
 	font-size: 12px;
-	color: #222;
-	font-weight: 600;
+	color: rgb(61, 57, 57);;
+	/* font-weight: 600; */
 	line-height: 20px;
 	text-align: center;
 }
 
 .sidebarItem > img {
-	margin-top: 15px;
+	margin-top: 10px;
 }
 
 .sidebarItem > p {
-	padding: 30px;
-	font-family: "Patrick hand";
+	padding: 20px;
+	margin: 20px;
+	margin-bottom: 0;
+	font-family: "Libre Barcode 39 Text";
+	font-size: 20px;
+	text-align: justify;
+	color: rgb(61, 57, 57);
 }
 
 .sidebarList {
 	list-style: none;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	font-family: "Julius Sans One", sans-serif;
+	color: rgb(61, 57, 57);
+	align-items: center;
+	justify-content: center;
 }
 
 .sidebarListItem {
@@ -57,6 +72,8 @@
 	width: 50%;
 	margin-top: 15px;
 	cursor: pointer;
+	color: rgb(61, 57, 57);
+	text-align: center;
 }
 
 .sidebarSocial {
@@ -67,7 +84,10 @@
 	justify-content: center;
 }
 .sidebarIcon {
-	font-size: 16px;
 	margin-left: 10px;
 	cursor: pointer;
+	color: yellowgreen;
+	border: 2px solid transparent;
+	border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
 }

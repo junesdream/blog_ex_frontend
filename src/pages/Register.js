@@ -8,32 +8,35 @@ const Register = () => {
 	const [username, setUsername] = useState("");
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
-	const [error] = useState("");
+	const [error, setError] = useState("");
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
-		axios
-			.post("http://localhost:8030/api/auth/register", {
-				username,
-				email,
-				password,
-			})
-			.then((res) => console.log(res))
-			.catch((err) => console.log(err));
-			
-		// 	e.preventDefault();
-		// 	setError(false);
-		// 	try {
-		// 	const res = await axios.post("http://localhost:8030/api/auth/register", {
+
+		// axios
+		// 	.post("http://localhost:8030/api/auth/register", {
 		// 		username,
 		// 		email,
 		// 		password,
-		// 	});
-		// 	res.data && window.location.replase("/login");
-		// } catch(err) {
-		// 	setError(true);
-		// }
+		// 	})
+		// 	.then((res) => console.log(res))
+		// 	.catch((err) => console.log(err));
+			
+			
+			setError(false);
+			try {
+			const res = await axios.post("http://localhost:8030/api/auth/register", {
+				username,
+				email,
+				password,
+			});
+			res.data && window.location.replace("/login");
+		} catch(err) {
+			setError(true);
+		}
+
 	};
+
 	return (
 		<div className="registerContainer">
 			<div className="register">

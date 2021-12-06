@@ -15,18 +15,30 @@
     height: 280px;
     object-fit: cover;
     border-radius: 70px;
+    border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
 }
 
 .postInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
+    margin-top: 20px;
 }
 
 .postCat {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 11px;
-    color: #1b1916;
+    color: white;
     line-height: 20px;
     margin-top: 15px;
     margin-right: 20px;
@@ -37,22 +49,26 @@
     font-family: 'Josefin Sans', sans-serif;
      font-size: 24px;
      font-weight: 700;;
-    margin-top: 15px;
     cursor: pointer;
+    background-image: 
+    linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  animation: move 35s linear infinite;
 }
 
 .postDate {
    font-family: 'Electrolize', sans-serif;
    font-style: italic; 
-   margin-right: 30px;
+   text-align: center;
    font-size: 13px;
-   color: rgb(75, 66, 66);
-   margin-top: 15px;
+   color: #50BFE6;
+
 }
 .postDesc {
    font-family: 'Julius Sans One', sans-serif; 
    font-size: 14px;
-   color: #444;
+   color: white;
    line-height: 24px;
    margin-top: 15px;
    overflow: hidden;

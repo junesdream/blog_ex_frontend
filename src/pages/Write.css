@@ -1,77 +1,103 @@
-.write { 
-    padding-top: 60px;
+.write {
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
 }
 
 .wirteImg {
-   margin-left: 150px;
-   width: 70vw;
-   height: 250px;
-   border-radius: 10px;
-   object-fit: none;
+	margin-left: 150px;
+	width: 70vw;
+	height: 250px;
+	border-radius: 10px;
+	object-fit: none;
+	border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
 }
 
 .writeForm {
-  position: relative;
+	position: relative;
 }
 
 .writeFormGroup {
-  /* margin-left: 150px;
+	/* margin-left: 150px;
   display: flex;  
   align-items: center; */
-  margin-left: 150px
+	margin-left: 150px;
 }
 
 .writeIcon {
-  width: 25px;
-  height: 25px;
-  margin-top: 20px;
-  padding: 5px;
-  border-radius: 10%;  
-  border: 2px solid;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px; 
-  color: rgb(58, 52, 52);
-  cursor: pointer;
+	width: 50px;
+	height: 40px;
+	margin-top: 20px;
+	padding: 5px;
+	border-radius: 10%;
+	border: 2px solid;
+	display: flex;
+	color: #ff00cc;
+	cursor: pointer;
 }
 
 .writeInput {
-    font-size: 30px;
-    border: none;
-    padding: 10px;
-    width: 68vw;
-    margin-top: 20px;
-    background-image: radial-gradient(circle, #c5d5e0, #bbc9d2, #b1bdc5, #a8b2b8, #9ea6ab, #9aa5ac, #97a4ad, #93a3ae, #97acbe, #9cb4cd, #a4bbdd, #aec2ed);
+	font-size: 30px;
+	display: flex;
+	border: none;
+	padding: 10px;
+	width: 68vw;
+	margin-top: 20px;
+	background-image: radial-gradient(
+		circle,
+		#c5d5e0,
+		#bbc9d2,
+		#b1bdc5,
+		#a8b2b8,
+		#9ea6ab,
+		#9aa5ac,
+		#97a4ad,
+		#93a3ae,
+		#97acbe,
+		#9cb4cd,
+		#a4bbdd,
+		#aec2ed
+	);
+	border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
 }
 
 .writeInput:focus {
-   outline: none;
+	outline: none;
 }
 
 .writeText {
-  font-size: 20px;
-  height: 100vh;
+	font-size: 20px;
+	height: 100vh;
 }
 
 .writeSubmit {
-  position: absolute;
-  top: 20px;
-  right: 10%; 
-  color: rgb(162, 152, 152);
-  background-color:rgb(58, 52, 52);;
-  padding: 10px;
-  border: 2px groove silver;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
+	position: absolute;
+	top: 20px;
+	right: 17%;
+	color: #2243b6;
+	background-color: #cc553d;
+	padding: 7px;
+	border: 3px groove #ff00cc;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
 }
-
-
-
-
-
-
-
-
-

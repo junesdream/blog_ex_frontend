@@ -6,7 +6,7 @@ import {
 	FaGithubSquare,
 	FaInstagramSquare,
 } from "react-icons/fa";
-import Aboutme from "../Images/Aboutme.jpeg";
+import Aboutme1 from "../componants/images/Aboutme1.png";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -25,12 +25,12 @@ const Sidebar = () => {
 	return (
 		<div className="sidebar">
 			<div className="sidebarItem">
-				<span className="sidebarTitle"> ABOUT ME </span>
+				<span className="sidebarTitle"> ABOUT US </span>
 				<br />
-				<img className="sidebarImg" src={Aboutme} alt="smile" />
+				<img className="sidebarImg" src={Aboutme1} alt="smile" />
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adip. Lorem ipsum
-					dolor sit amet, con
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+					diam nonumy eirmod tempor invidunt ut labore 
 				</p>
 			</div>
 			<div className="sidebarItem">

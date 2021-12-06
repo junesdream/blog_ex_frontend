@@ -1,0 +1,96 @@
+.snapContainer {
+	/* margin-bottom: 40px; */
+	left: 15%;
+}
+
+.snap {
+	width: 385px;
+	margin: 0px 25px 70px 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap; 
+  align-items: center; */
+
+.snapImg {
+	width: 60vw;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 70px;
+	border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
+}
+
+/* .snapInfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	margin-top: 10px;
+}
+
+.snapCat {
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 11px;
+	color: white;
+	line-height: 20px;
+    margin-top: 15px;
+    margin-right: 20px;
+	cursor: pointer;
+} */
+
+.snapTitle {
+    margin: 20px;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	cursor: pointer;
+	background-image: linear-gradient(
+		to right,
+		red,
+		orange,
+		yellow,
+		green,
+		blue,
+		indigo,
+		violet
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: move 35s linear infinite;
+}
+
+/* .snapDate {
+	font-family: "Electrolize", sans-serif;
+	font-style: italic;
+	text-align: center;
+	font-size: 13px;
+	color: #50bfe6;
+} */
+
+.snapDesc {
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 14px;
+	color: #a7f432;
+	line-height: 24px;
+	margin-top: 15px;
+	/* overflow: hidden;
+	text-align: justify;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical; */
+}

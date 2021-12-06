@@ -1,77 +1,131 @@
-.write { 
-    padding-top: 60px;
+.snaps {
+	padding-top: 80px;
+	padding-bottom: 200px;
+	display: flex;
+	flex-direction: column;
 }
 
-.wirteImg {
-   margin-left: 150px;
-   width: 70vw;
-   height: 250px;
-   border-radius: 10px;
-   object-fit: none;
+h2 {
+	text-align: center;
+	background: linear-gradient(
+		to right,
+		#ef5350,
+		#f48fb1,
+		#7e57c2,
+		#2196f3,
+		#26c6da,
+		#43a047,
+		#eeff41,
+		#f9a825,
+		#ff5722
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.snapsImg {
+	margin-left: 150px;
+	width: 70vw;
+	height: 300px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	object-fit: none;
+	border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
 }
 
-.writeForm {
-  position: relative;
+.snapsForm {
+	position: relative;
 }
 
-.writeFormGroup {
-  /* margin-left: 150px;
-  display: flex;  
-  align-items: center; */
-  margin-left: 150px
+.snapsFormGroup {
+	margin-left: 150px;
+	/* display: flex;   */
+	align-items: center;
+	margin-left: 150px;
 }
 
-.writeIcon {
-  width: 25px;
-  height: 25px;
-  margin-top: 20px;
-  padding: 5px;
-  border-radius: 10%;  
-  border: 2px solid;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px; 
-  color: rgb(58, 52, 52);
-  cursor: pointer;
+.snapsIcon {
+	width: 50px;
+	height: 40px;
+	margin-top: 10px;
+	/* margin-top: 20px; */
+	padding: 5px;
+	border-radius: 10%;
+	border: 2px solid;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(58, 52, 52);
+	cursor: pointer;
+	color: yellowgreen;
+}
+
+.snapsInput {
+	font-size: 30px;
+	display: flex;
+	border: none;
+	padding: 10px;
+	width: 70vw;
+	margin-top: 20px;
+	background-image: radial-gradient(
+		circle,
+		#c5d5e0,
+		#bbc9d2,
+		#b1bdc5,
+		#a8b2b8,
+		#9ea6ab,
+		#9aa5ac,
+		#97a4ad,
+		#93a3ae,
+		#97acbe,
+		#9cb4cd,
+		#a4bbdd,
+		#aec2ed
+	);
+	border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
+}
+
+.snapsInput:focus {
+	outline: none;
+}
+
+.snapsText {
+	font-size: 20px;
+	height: 30vh;
 }
 
 .writeInput {
-    font-size: 30px;
-    border: none;
-    padding: 10px;
-    width: 68vw;
-    margin-top: 20px;
-    background-image: radial-gradient(circle, #c5d5e0, #bbc9d2, #b1bdc5, #a8b2b8, #9ea6ab, #9aa5ac, #97a4ad, #93a3ae, #97acbe, #9cb4cd, #a4bbdd, #aec2ed);
+	width: 70vw;
 }
 
-.writeInput:focus {
-   outline: none;
+.snapsSubmit {
+	position: absolute;
+	/* display: flex; */
+	left: 45%;
+	margin: 20px;
+	float: left;
+	color: rgb(255, 0, 157);
+	background-color: yellowgreen;
+	padding: 5px;
+	border: 3px solid #2243b6;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 16px;
 }
-
-.writeText {
-  font-size: 20px;
-  height: 100vh;
-}
-
-.writeSubmit {
-  position: absolute;
-  top: 20px;
-  right: 10%; 
-  color: rgb(162, 152, 152);
-  background-color:rgb(58, 52, 52);;
-  padding: 10px;
-  border: 2px groove silver;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-
-
-
-
-
-
-
-

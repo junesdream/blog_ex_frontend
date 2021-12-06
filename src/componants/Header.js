@@ -5,10 +5,10 @@ const Header = () => {
     return (
 		<div className="header">
 			<div id="headerTitles">
-				<span className="headerTitleSm"> BRB</span>
+				<span className="headerTitleSm"> Welcome to</span>
 				<br /> <br /> <br /> <br />
-				<br />
-				<span className="headerTitleLg"> SORINORI </span>
+	
+				<span className="glow "> SORINORI </span>
 			</div>
 		</div>
 	);

@@ -18,7 +18,7 @@
 .settingsUpdateTitle {
 	font-size: 30px;
 	margin-bottom: 20px;
-	color: orchid;
+	color: #0048BA;
 	display: flex;
 	box-shadow: burlywood;
 
@@ -46,6 +46,16 @@
 	width: 70px;
 	height: 70px;
 	border-radius: 20px;
+	border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
 }
 
 .settingsPPIcon {
@@ -53,11 +63,11 @@
 	height: 25px;
 	border-radius: 50%;
 	background-color: beige;
-	color: lightcoral;
+	color: #9C51B6;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-left: 10px;
+	margin-left: 20px;
 	cursor: pointer;
 }
 
@@ -79,9 +89,24 @@
 	align-self: center;
 	border-radius: 10px;
 	color: white;
-	background-color: teal;
-	padding: 10px;
-	/* margin-top: 20px; */
+	background-color: #FF5470;
+	padding: 5px;
+	border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
+	margin-top: 20px;
 	cursor: pointer;
 	bottom: 30%;
+}
+
+.userNameInput{
+	border: 1px solid yellowgreen;
+	background-color: beige;
 }

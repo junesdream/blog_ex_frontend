@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=Darker+Grotesque:wght@300&family=Libre+Barcode+39+Text&family=Monoton&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&family=Ropa+Sans&display=swap');
+
+.tpodBox{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    background-color: #DDD;
+} */
+
+.tpodBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    padding: 20px;
+	margin: 20px;
+	height: 100vh;
+}
+
+@media(min-width: 768px){
+  .wrapper {
+      width: 680px;
+  }
+}
+
+@media(min-width: 992px){
+  .wrapper {
+     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* .tpodContainer {
+	padding: 20px;
+	margin: 20px;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+} */
+
+.c-player {
+    display: block;
+    margin: 0px auto;
+    padding: 50px;
+    font-family: "Ropa Sans", sans-serif;
+    border-radius: 16px;
+    background-image: radial-gradient(
+		circle,
+		#c5d5e0,
+		#bbc9d2,
+		#b1bdc5,
+		#a8b2b8,
+		#9ea6ab,
+		#9aa5ac,
+		#97a4ad,
+		#93a3ae,
+		#97acbe,
+		#9cb4cd,
+		#a4bbdd,
+		#aec2ed
+	);
+    box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.8), inset 6px 6px 12px rgba(255, 255, 255, 0.4);
+}
+
+.c-player > h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+}
+
+.c-player > p {
+    color: #1B1B1B;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.c-player > p span {
+    font-weight: 400;
+}
+
+.c-player--details .details-img {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.c-player--details .details-img img {
+    display: block;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8), -6px -6px 12px rgba(255, 255, 255, 0.4);
+}
+
+.c-player--details .details-img:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    right: -25px;
+    bottom: -25px;
+    border-radius: 50%;
+    border: 3px dashed rgba(255, 206, 0, 1);
+}
+
+.c-player--details .details-title {
+    color: #2D383A;
+    font-size: 28px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(255,255,255,0.4);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.c-player--details .details-artist {
+    color: #AAA;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(255,255,255,0.4);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.c-player--controls {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px;
+    margin: 10px; */
+    margin-bottom: 30px;
+}
+
+.c-player--controls .play-btn {
+    display: flex;
+    margin: 0 30px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), -4px -4px 10px rgba(255, 255, 255, 0.4), inset -4px -4px 10px rgba(0, 0, 0, 0.4), inset 4px 4px 10px rgba(255, 255, 255, 0.4);
+    border: none;
+    outline: none;
+    background-color: #FFCE00;
+    color: #FFF;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.c-player--controls .skip-btn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #888;
+    font-size: 18px;
+}
