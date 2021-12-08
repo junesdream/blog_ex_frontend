@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Luckiest+Guy&family=Original+Surfer&family=Racing+Sans+One&family=Rubik+Mono+One&display=swap');
+.muPlayersContainer {
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+
+.youPlayer {
+    margin: 10px;
+    padding: 10px;
+     border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
+}
+
+.mixCloudPlayer {
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
+}
+
+.soundCloudPlayer { 
+    margin: 10px;
+    padding: 10px;
+     border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
+}
+
+.playerName{
+    margin-bottom: 10px; 
+    padding: 5px;
+	font-family: 'Racing Sans One', cursive;
+	
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+
+	color: #F00;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #FF0000;
+    -webkit-animation: animatedBackground_c 2s infinite alternate;
+}
+
+@keyframes animatedBackground_c {
+    0% {-webkit-text-stroke-color: #ff8b00}
+    10% {-webkit-text-stroke-color: #e8ff00}
+    20% {-webkit-text-stroke-color: #5dff00}
+    30% {-webkit-text-stroke-color: #00ff2e}
+    40% {-webkit-text-stroke-color: #00ffb9}
+    50% {-webkit-text-stroke-color: #00b9ff}
+    60% {-webkit-text-stroke-color: #002eff}
+    70% {-webkit-text-stroke-color: #5d00ff}
+    80% {-webkit-text-stroke-color: #e800ff}
+    90% {-webkit-text-stroke-color: #ff008b}
+    100% {-webkit-text-stroke-color: #ff0000}
+}
+
+
+.audioPlayer{
+	margin: 10px;
+    padding: 10px;
+     border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
+}
+
+.musicSelector{
+	
+     border: 3px solid #CCFF00;
+	
+}

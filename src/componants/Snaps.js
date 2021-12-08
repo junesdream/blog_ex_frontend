@@ -2,6 +2,7 @@ import React from "react";
 // import "./Snaps.css";
 import Snap from "../componants/Snap";
 
+
 const Snaps = ({ snaps }) => {
 	console.log("alle snaps", snaps);
 	return (

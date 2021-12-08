@@ -8,7 +8,9 @@ import AudioPlayer from "material-ui-audio-player";
 const TrackPlayer = () => {
 	const muiTheme = createTheme({});
 	const src = [
+		"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
 		"https://www.dropbox.com/home/Tracks_final_project?preview=Blue+(Original+Mix).mp3",
+		"https://www.dropbox.com/home/Tracks_final_project?preview=Speak+Up+(Original+Mix)+%5BRecovery+Collective%5D.mp3",
 		"https://www.dropbox.com/home/Tracks_final_project?preview=Baewatch.mp3",
 	];
 
@@ -16,14 +18,14 @@ const TrackPlayer = () => {
 	// 	"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.wav",
 
 	return (
-		<div className="playerBox">
+		<div className="trPlayerBox">
 			<ThemeProvider theme={muiTheme}>
 				<AudioPlayer
-					elevation={1}
+					// elevation={1}
 					width="50%"
 					height="100%"
 					variation="default"
-					spacing={3}
+					// spacing={3}
 					download={true}
 					autoplay={false}
 					order="standart"

@@ -1,9 +1,13 @@
-.playerBox {
-    margin: 0;
+.trPlayerBox {
+	border: solid red;
+	height: 100px;
+	width: 100%;
+	margin: 2em auto;
+	/* margin: 0;
     padding: 0;
     box-sizing: border-box;
-    display: flex;
-    /* border: 3px solid transparent;
+    display: flex; */
+	/* border: 3px solid transparent;
 	border-image: linear-gradient(
 		to bottom right,
 		#b827fc 0%,

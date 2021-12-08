@@ -33,7 +33,10 @@ const Snaps = () => {
 			// console.log("newPost", newPost);
 
 			try {
-				await axios.post("http://localhost:8030/api/upload", data);
+				await axios.post(
+					"https://sorinori.herokuapp.com/api/upload",
+					data
+				);
 				// await axios.post("/upload", data);
 			} catch (err) {
 				console.log("uploaderr:", err);
@@ -42,12 +45,12 @@ const Snaps = () => {
 
 		try {
 			// const res = await axios.post(
-			// 	"http://localhost:8030/api/posts",
+			// 	"https://sorinori.herokuapp.com/api/posts",
 			// 	newPost
 			// );
 
 			const res = await axios.post(
-				"http://localhost:8030/api/snaps",
+				"https://sorinori.herokuapp.com/api/snaps",
 				newPost
 			);
 
@@ -61,12 +64,12 @@ const Snaps = () => {
 		}
 
 		// axios
-		// .post("http://localhost:8030/api/upload", {data})
+		// .post("https://sorinori.herokuapp.com/api/upload", {data})
 		// .then((res) => console.log(res))
 		// .catch((err) => console.log(err));
 
 		// 	axios
-		// 		.post("http://localhost:8030/api/posts/new", newPost)
+		// 		.post("https://sorinori.herokuapp.com/api/posts/new", newPost)
 		// 		// .then((res) => console.log(res))
 		// 		.then((res) => window.location.replace("/post/", +res.data._id))
 		// 		.catch((err) => console.log(err));

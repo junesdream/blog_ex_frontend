@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Luckiest+Guy&family=Original+Surfer&family=Rubik+Mono+One&display=swap');
+
 .gallery {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
-	align-content: center;
-	flex-wrap: wrap;
+	margin-left: 70px;
+
 }
 
 /* display: flex;
@@ -20,23 +21,21 @@
   padding-bottom: 2em;
 	width: auto; */
 
-h1 {
-	text-align: center;
-	background: linear-gradient(
-		to right,
-		#ef5350,
-		#f48fb1,
-		#7e57c2,
-		#2196f3,
-		#26c6da,
-		#43a047,
-		#eeff41,
-		#f9a825,
-		#ff5722
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+.galleryTitle {
+	margin-left: 22%;
+	font-family: 'Original Surfer', cursive;
+	font-size: 40px;
+	   background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    -webkit-animation: animatedBackground_a 5s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    background-clip: text;
 }
+@keyframes animatedBackground_a {
+    0% { background-position: 0 0 }
+    100% { background-position: -500px 0 }
+}
+
 
 /* .snapsDemo {
    display: flex;

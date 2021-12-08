@@ -1,0 +1,20 @@
+.impressumBox {
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+    margin: 40px;
+    padding: 20;
+    color: #BFAFB2;
+    font-size: 12px;
+
+}
+
+.impressumTitle {
+    margin-top: 20px;
+    color:aquamarine;    
+}
+
+.impressumContant{
+    margin-top: 25px;
+    color: #A6A6A6;
+}

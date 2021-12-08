@@ -1,22 +1,22 @@
 * {
 	margin: 0;
-	position: relative;
+	/* position: relative; */
 	/* overflow: auto; */
-	scroll-behavior: smooth;
+	/* scroll-behavior: smooth; */
 }
-
-/* body {
-   background-image: radial-gradient(circle, #e0ffff, #e4fdff, #e9fcff, #eefaff, #f3f9ff, #f2f6fc, #f1f2f8, #efeff4, #e8e8ec, #e1e1e3, #dadadb, #d3d3d3);
-} */
-
-/* * body {
-    background:linear-gradient(90deg, Red, Orange, Yellow, Green, Blue, Indigo,violet);
-  
-} */
-
 * body {
 	background-color: #000000;
 }
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+	/* CSS */
+}
+
+/* @media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+} */
 
 /* Navigation CSS */
 /* .navbar {

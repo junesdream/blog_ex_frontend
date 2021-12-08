@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=Darker+Grotesque:wght@300&family=Libre+Barcode+39+Text&family=Monoton&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
 .sidebar {
 	/* flex: 3; */
-	top: 100px;
+	margin-top: 280px;
     float: right;
 	/* margin: 10px; */
 	padding: 10px;

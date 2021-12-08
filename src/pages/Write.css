@@ -4,6 +4,8 @@
 	flex-direction: column;
 }
 
+/* .write form { max-width:420px; margin:50px auto; } */
+
 .wirteImg {
 	margin-left: 150px;
 	width: 70vw;
@@ -34,8 +36,8 @@
 }
 
 .writeIcon {
-	width: 50px;
-	height: 40px;
+	width: 60px;
+	height: 50px;
 	margin-top: 20px;
 	padding: 5px;
 	border-radius: 10%;
@@ -91,13 +93,14 @@
 .writeSubmit {
 	position: absolute;
 	top: 20px;
-	right: 17%;
+	right: 15%;
 	color: #2243b6;
 	background-color: #cc553d;
-	padding: 7px;
+	padding: 10px;
 	border: 3px groove #ff00cc;
 	border-radius: 10px;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: bold;
+	width: 100px;
 }

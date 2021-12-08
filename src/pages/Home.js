@@ -12,21 +12,19 @@ const Home = () => {
 	// const { search } = useLocation();
 	useEffect(() => {
 		axios
-			.get("http://localhost:8030/api/posts")
+			.get("https://sorinori.herokuapp.com/api/posts")
 			// .then((res) => setPosts(res.data))
 			.then((res) => {
-			
 				setPosts(res.data);
 			})
 			.catch((err) => console.log(err));
 		// const fetchPosts = async () => {
-		// 	const res = await axios.get("http://localhost:8030/api/posts'");
+		// 	const res = await axios.get("https://sorinori.herokuapp.com/api/posts'");
 		// 	setPosts(res.data);
 		// };
 		// fetchPosts();
 		// console.log(posts);
 	}, []);
-
 
 	// const location = useLocation();
 	// console.log(location);

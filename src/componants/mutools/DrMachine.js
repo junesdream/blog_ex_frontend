@@ -131,14 +131,16 @@ const KeyboardKey = ({
 	deactivateAudio,
 	sound: { id, key, url, keyCode },
 }) => {
-	const handleKeydown = useCallback((e) => {
-        
-		if (keyCode === e.keyCode) {
-			const audio = document.getElementById(key);
-			play(key, id);
-			deactivateAudio(audio);
-		}
-    }, [deactivateAudio, id, key, keyCode, play]);
+	const handleKeydown = useCallback(
+		(e) => {
+			if (keyCode === e.keyCode) {
+				const audio = document.getElementById(key);
+				play(key, id);
+				deactivateAudio(audio);
+			}
+		},
+		[deactivateAudio, id, key, keyCode, play]
+	);
 
 	useEffect(() => {
 		document.addEventListener("keydown", handleKeydown);
@@ -272,7 +274,7 @@ const DrMachine = () => {
 	return (
 		<div id="drum-machine">
 			{setKeyVolume()}
-			<div className="wrapper">
+			<div className="drumMachineWrapper">
 				<Keyboard
 					sounds={sounds}
 					play={play}

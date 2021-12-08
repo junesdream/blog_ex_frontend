@@ -11,7 +11,7 @@ const SinglePost = () => {
 	const location = useLocation();
 	const path = location.pathname.split("/")[2];
 	const [post, setPost] = useState({});
-	const PF = "http://localhost:8030/images/";
+	const PF = "https://sorinori.herokuapp.com/images/";
 	const { user } = useContext(Context);
 	const [title, setTitle] = useState("");
 	const [desc, setDesc] = useState("");
@@ -24,7 +24,7 @@ const SinglePost = () => {
 			// const res = await axios.get("/posts/" + path);
 			console.log("path", path);
 			const res = await axios.get(
-				"http://localhost:8030/api/posts/" + path
+				"https://sorinori.herokuapp.com/api/posts/" + path
 			);
 			setPost(res.data);
 			setTitle(res.data.title);
@@ -35,9 +35,12 @@ const SinglePost = () => {
 
 	const handleDelete = async () => {
 		try {
-			await axios.delete("http://localhost:8030/api/posts/" + path, {
-				data: { username: user.username },
-			});
+			await axios.delete(
+				"https://sorinori.herokuapp.com/api/posts/" + path,
+				{
+					data: { username: user.username },
+				}
+			);
 			window.location.replace("/");
 		} catch (err) {}
 
@@ -51,11 +54,14 @@ const SinglePost = () => {
 
 	const handleUpdate = async () => {
 		try {
-			await axios.put("http://localhost:8030/api/posts/" + path, {
-				username: user.username,
-				title,
-				desc,
-			});
+			await axios.put(
+				"https://sorinori.herokuapp.com/api/posts/" + path,
+				{
+					username: user.username,
+					title,
+					desc,
+				}
+			);
 			setUpdateMode(false);
 		} catch (err) {}
 	};
@@ -98,9 +104,9 @@ const SinglePost = () => {
 				)}
 				<div className="singlePostInfo">
 					<span className="singlePostAutor">
-						Author: {" "}
-						<Link to={`/?user=${user.username}`} className="link">
-							<b>{user.username}</b>
+						Author:{" "}
+						<Link to={`/?user=${post.username}`} className="link">
+							<b>{post.username}</b>
 						</Link>
 					</span>
 					<span className="singlePostDate">

@@ -4,25 +4,39 @@ import "./Music.css";
 import Header from "../componants/Header";
 // import Posts from "../componants/Posts";
 // import Sidebar from "../componants/Sidebar";
-import TrackPlayer from "../componants/mutools/TrackPlayer";
+// import TrackPlayer from "../componants/mutools/TrackPlayer";
 import Boxen from "../componants/images/Boxen.png";
 import DrMachine from "../componants/mutools/DrMachine";
-import Tpod from "../componants/tpod/Tpod";
-// import BpmDetector from "../componants/MuTools/BpmDetector";
-
+import MuPlayers from "../componants/mutools/MuPlayers";
+import Heart from "../componants/images/Heart.png";
+// import Tpod from "../componants/tpod/Tpod";
+// import BpmDetector from "../componants/mutools/BpmDetector";
 
 const Music = () => {
 	// const [posts, setPosts] = useState([]);
 	return (
 		<>
+			<Header />
 			<div className="musicContainer">
-				<Header />
-				<div className="playerContainer">
-					<h2> Listen new Tracks</h2>
-					<img className="listenImg" src={Boxen} alt="smile" />
+				<div className="trackPlayerBox">
+					<span
+						style={{
+							textDecoration: "underline",
+							textAlign: "center",
+							fontFamily: "Pacifico",
+						}}
+					>
+						Listen new Tracks
+					</span>
 				</div>
-				<div className="trackPlayer">
-					<TrackPlayer />
+
+				<div>
+					<img className="listenImg" src={Boxen} alt="boxen" />
+					<img className="listenImg" src={Heart} alt="heart" />
+				</div>
+				<span style={{ fontSize: "50px" }}> &#9198;</span>
+				<div className="muPlayers">
+					<MuPlayers />
 				</div>
 
 				<div className="drmachineContainer">
@@ -37,8 +51,7 @@ const Music = () => {
 					</span>
 					<DrMachine />
 				</div>
-
-				<div className="music">
+				{/* <div className="musicItemBox">
 					<div className="tpodContainer">
 						<h2 style={{ margin: "10px", padding: "10px" }}>
 							Play Tracks
@@ -51,13 +64,13 @@ const Music = () => {
 							Find BPM
 						</h2>
 
-						{/* <BpmDetector /> */}
+						<BpmDetector />
+						
 					</div>
 
-					{/* <Posts posts={posts} /> */}
+					<Posts posts={posts} />
 				</div>
-
-				{/* <Sidebar /> */}
+				<Sidebar /> */}
 			</div>
 		</>
 	);

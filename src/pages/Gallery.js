@@ -8,7 +8,7 @@ import Sidebar from "../componants/Sidebar";
 import axios from "axios";
 
 // async function getData() {
-// 	const data = await axios.get("http://localhost:8030/api/snaps")
+// 	const data = await axios.get("https://sorinori.herokuapp.com/api/snaps")
 // 	.TouchEvent(promise => {
 // 		return promise.data;
 // 	})
@@ -23,7 +23,7 @@ const Gallary = () => {
 	// const { search } = useLocation();
 	useEffect(() => {
 		axios
-			.get("http://localhost:8030/api/snaps")
+			.get("https://sorinori.herokuapp.com/api/snaps")
 			.then((res) => setSnaps(res.data))
 			.catch((err) => console.log(err));
 	}, []);
@@ -31,7 +31,7 @@ const Gallary = () => {
 	// useEffect(() => {
 	// 	const getPost = async () => {
 	// 		// await axios
-	// 		// 	.get("http://localhost:8030/api/snaps")
+	// 		// 	.get("https://sorinori.herokuapp.com/api/snaps")
 	// 		// 	.then((res) => setPosts(res.data))
 	// 		// 	.catch((err) => console.log(err));
 	// 		const updatePosts = async () => {
@@ -45,7 +45,9 @@ const Gallary = () => {
 	return (
 		<>
 			<Header />
-			<h1> Best Faces from the Floor</h1>
+			<span className="galleryTitle">
+				&hearts; Best Faces from the Floor &hearts;
+			</span>
 			<div className="gallery">
 				{/* <Snaps className="snapsDemo" snaps={snaps} /> */}
 				<Snaps snaps={snaps} />

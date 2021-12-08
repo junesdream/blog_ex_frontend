@@ -10,6 +10,10 @@ import Register from "./pages/Register";
 import Music from "./pages/Music";
 import Snaps from "./pages/Snaps";
 import Gallary from "./pages/Gallery";
+import Contact from "../src/pages/footerpages/Contact";
+import Impressum from "../src/pages/footerpages/Impressum";
+import About from "../src/pages/footerpages/About";
+import MyCalendar from "../src/pages/footerpages/MyCalendar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
@@ -38,8 +42,23 @@ function App() {
 				<Route path="/gallery">
 					{user ? <Gallary /> : <Register />}
 				</Route>
+
+				<Route path="/contact" component={Contact}>
+					<Contact />
+				</Route>
+				<Route path="/impressum" component={Impressum}>
+					<Impressum />
+				</Route>
+				<Route path="/about" component={About}>
+					<About />
+				</Route>
+				<Route path="/mycalendar" component={MyCalendar}>
+					<MyCalendar />
+				</Route>
 			</Switch>
+
 			<Footer />
+		
 		</Router>
 	);
 }

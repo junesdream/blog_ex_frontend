@@ -1,6 +1,7 @@
 .settings {
 	display: flex;
 	padding-bottom: 20%;
+	padding-left: 15px; 
 }
 
 .settingsWrapper {
@@ -110,3 +111,4 @@
 	border: 1px solid yellowgreen;
 	background-color: beige;
 }
+

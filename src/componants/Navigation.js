@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navigation.css";
-import { FaMusic, FaSearchPlus } from "react-icons/fa";
+import { FaSearchPlus } from "react-icons/fa";
 import { useContext } from "react";
 import { Context } from "../context/Context";
+import Logo from "../componants/images/Logo.png";
 
 const Navigation = () => {
 	const { user, dispatch } = useContext(Context);
-	const PF = "http://localhost:8030/images/";
-
+	// const PF = "https://sorinori.herokuapp.com/images/";
+	const PF = "https://sorinori.herokuapp.com/images/";
 	const handleLogout = () => {
 		dispatch({ type: "LOGOUT" });
 	};
@@ -16,7 +17,12 @@ const Navigation = () => {
 	return (
 		<div className="navbar">
 			<div className="navLeft">
-				<FaMusic className="navIcon" />
+				{/* <FaMusic className="navIcon" /> */}
+				<img className="navLogo" src={Logo} alt="logo" />
+				<div className="navLogoTag">
+					<span>소리</span>
+					<span>노리</span>
+				</div>
 			</div>
 			<div className="navCenter">
 				<ul className="navList">
@@ -77,7 +83,11 @@ const Navigation = () => {
 			<div className="navRight">
 				{user ? (
 					<Link to="/settings">
-						<img className="navImg" src={PF+user.profilePic} alt="" />
+						<img
+							className="navImg"
+							src={PF + user.profilePic}
+							alt=""
+						/>
 					</Link>
 				) : (
 					<ul className="navList">

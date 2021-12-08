@@ -16,7 +16,9 @@ const Sidebar = () => {
 
 	useEffect(() => {
 		const getCats = async () => {
-			const res = await axios.get("http://localhost:8030/api/categories");
+			const res = await axios.get(
+				"https://sorinori.herokuapp.com/api/categories"
+			);
 			// const res = await axios.get("/categories");
 			setCats(res.data);
 		};
@@ -30,7 +32,7 @@ const Sidebar = () => {
 				<img className="sidebarImg" src={Aboutme1} alt="smile" />
 				<p>
 					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-					diam nonumy eirmod tempor invidunt ut labore 
+					diam nonumy eirmod tempor invidunt ut labore
 				</p>
 			</div>
 			<div className="sidebarItem">

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Luckiest+Guy&family=Rubik+Mono+One&display=swap');
+
+.myCalendarContainer {
+    padding: 10px;
+    margin: 10px;
+}
+
+.uhrBody{
+	padding: 10px;
+    margin: 20px;
+	  -webkit-animation: animatedBackground_b 5s linear infinite alternate;
+    border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;	
+}
+.calendarBody{
+    padding: 10px;
+    margin: 40px;
+    font-family: 'Luckiest Guy', cursive;
+     -webkit-animation: animatedBackground_b 5s linear infinite alternate;
+    border: 3px solid transparent;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
+}

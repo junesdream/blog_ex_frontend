@@ -14,27 +14,28 @@ const Register = () => {
 		e.preventDefault();
 
 		// axios
-		// 	.post("http://localhost:8030/api/auth/register", {
+		// 	.post("https://sorinori.herokuapp.com/api/auth/register", {
 		// 		username,
 		// 		email,
 		// 		password,
 		// 	})
 		// 	.then((res) => console.log(res))
 		// 	.catch((err) => console.log(err));
-			
-			
-			setError(false);
-			try {
-			const res = await axios.post("http://localhost:8030/api/auth/register", {
-				username,
-				email,
-				password,
-			});
+
+		setError(false);
+		try {
+			const res = await axios.post(
+				"https://sorinori.herokuapp.com/api/auth/register",
+				{
+					username,
+					email,
+					password,
+				}
+			);
 			res.data && window.location.replace("/login");
-		} catch(err) {
+		} catch (err) {
 			setError(true);
 		}
-
 	};
 
 	return (

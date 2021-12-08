@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Post = ({ post }) => {
 	// console.log("post", post);
-	const PF = "http://localhost:8030/images/";
+	const PF = "https://sorinori.herokuapp.com/images/";
 	return (
 		<div className="postContainer">
 			<div className="post">

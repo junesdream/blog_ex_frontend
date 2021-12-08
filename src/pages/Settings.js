@@ -15,7 +15,7 @@ const Settings = () => {
 	const [success, setSuccess] = useState(false);
 
 	const { user, dispatch } = useContext(Context);
-	const PF = "http://localhost:8030/images/";
+	const PF = "https://sorinori.herokuapp.com/images/";
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
@@ -39,7 +39,10 @@ const Settings = () => {
 			// console.log("newPost", newPost);
 
 			try {
-				await axios.post("http://localhost:8030/api/upload", data);
+				await axios.post(
+					"https://sorinori.herokuapp.com/api/upload",
+					data
+				);
 				// await axios.post("/upload", data);
 			} catch (err) {
 				// console.log("uploaderr:", err)
@@ -47,12 +50,12 @@ const Settings = () => {
 		}
 		try {
 			const res = await axios.put(
-				"http://localhost:8030/api/users/" + user._id,
+				"https://sorinori.herokuapp.com/api/users/" + user._id,
 				{ userId: user._id, username, email, password, profilePic }
 			);
 			// const res = await axios.post("/users/" +user._id);
-			setSuccess(true)
-console.log("resdata", res.data)
+			setSuccess(true);
+			console.log("resdata", res.data);
 			dispatch({ type: "UPDATE_SUCCESS", payload: res.data });
 		} catch (err) {
 			// console.log("posterr:", err);

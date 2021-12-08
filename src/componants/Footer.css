@@ -3,13 +3,13 @@
 	height: 50px;
 	/* background-color: AliceBlue; */
 	position: relative;
-	bottom: 20px;
+	/* bottom: 20px; */
 	/* float: bottom; */
 	display: flex;
 	align-items: center;
 	font-family: "Poiret One", cursive;
-	padding-bottom: 1rem;
-	margin-top: 1rem;
+	padding-bottom: 2rem;
+	margin-top: 3rem;
 	padding-top: 1rem;
 	text-align: block;
 	/* background-color: #f2dd6e;
@@ -31,6 +31,7 @@
 }
 
 .bottomRight p {
+	margin-top: 20px;
 	background: linear-gradient(
 		to right,
 		#ef5350,

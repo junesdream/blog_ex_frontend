@@ -1,10 +1,12 @@
 .snapContainer {
 	/* margin-bottom: 40px; */
-	left: 15%;
+
+	margin-left: 20px;
 }
 
 .snap {
 	width: 385px;
+	left: 20%;
 	margin: 0px 25px 70px 70px;
 	display: flex;
 	flex-direction: column;
@@ -94,3 +96,7 @@
 	-webkit-line-clamp: 5;
 	-webkit-box-orient: vertical; */
 }
+
+/* .snapUserName{
+	left: 10%
+} */

@@ -15,7 +15,7 @@ const Login = () => {
 		dispatch({ type: "LOGIN_START" });
 
 		// axios
-		// 	.post("http://localhost:8030/api/auth/login", {
+		// 	.post("https://sorinori.herokuapp.com/api/auth/login", {
 		// 		username: userRef.current.value,
 		// 		password: passwordRef.current.value,
 		// 	})
@@ -29,15 +29,17 @@ const Login = () => {
 		// 	});
 
 		try {
-			const res = await axios.post("http://localhost:8030/api/auth/login", {
-				username: userRef.current.value,
-				password: passwordRef.current.value,
-			});
-			dispatch({ type:"LOGIN_SUCCESS", payload:res.data });
-		} catch(err) {
+			const res = await axios.post(
+				"https://sorinori.herokuapp.com/api/auth/login",
+				{
+					username: userRef.current.value,
+					password: passwordRef.current.value,
+				}
+			);
+			dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
+		} catch (err) {
 			dispatch({ type: "LOGIN_FAILURE" });
 		}
-
 	};
 
 	return (
