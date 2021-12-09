@@ -30,13 +30,13 @@ const AboutUs = () => {
 				</div>
 				<div className="drmoon">
 					<u className="crewName">Dr.Moon:</u> <br />
-					<img style={{ width: "50%" }} src={Drmoon} alt="drmoon" />
+					<img style={{ width: "100%" }} src={Drmoon} alt="drmoon" />
 					<span className="crewTitle">
 						<br /> Attorney & Columnist <br />
 						Power!
 					</span>
 				</div>
-
+			</div>
 				<div className="aboutDown">
 					<div className="mizgold">
 						<u className="crewName">Mizgold:</u> <br />
@@ -60,7 +60,7 @@ const AboutUs = () => {
 						</span>
 					</div>
 				</div>
-			</div>
+			
 		</div>
 	);
 };

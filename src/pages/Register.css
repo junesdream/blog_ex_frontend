@@ -16,7 +16,8 @@
 .registerTitle {
 	font-size: 50px;
 	margin-top: 50px;
-	background-image: linear-gradient(
+	color: teal;
+	/* background-image: linear-gradient(
 		to left,
 		violet,
 		indigo,
@@ -27,14 +28,14 @@
 		red
 	);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent; */
 }
 
 .registerForm {
 	margin-top: 10px;
 	display: flex;
 	flex-direction: column;
-	color: #FF007C;
+	color: #ff007c;
 }
 
 .registerForm > label {
@@ -57,7 +58,7 @@
 }
 
 .registerButton {
-	margin-top: 30px;
+	margin-top: 40px;
 	cursor: pointer;
 	background-color: teal;
 	border: none;

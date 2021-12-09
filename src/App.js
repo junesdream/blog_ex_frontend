@@ -13,7 +13,8 @@ import Gallary from "./pages/Gallery";
 import Contact from "../src/pages/footerpages/Contact";
 import Impressum from "../src/pages/footerpages/Impressum";
 import About from "../src/pages/footerpages/About";
-import MyCalendar from "../src/pages/footerpages/MyCalendar";
+// import MyCalendar from "../src/pages/footerpages/MyCalendar";
+import Kalendar from "../src/pages/footerpages/Kalendar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
@@ -52,13 +53,15 @@ function App() {
 				<Route path="/about" component={About}>
 					<About />
 				</Route>
-				<Route path="/mycalendar" component={MyCalendar}>
+				{/* <Route path="/mycalendar" component={MyCalendar}>
 					<MyCalendar />
+				</Route> */}
+				<Route path="/kalendar" component={Kalendar}>
+					<Kalendar />
 				</Route>
 			</Switch>
 
 			<Footer />
-		
 		</Router>
 	);
 }

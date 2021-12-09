@@ -74,6 +74,9 @@ const Write = () => {
 
 	return (
 		<div className="write">
+			<span className="writeTitleName">
+				Any best portrait from the floor? &#9997;
+			</span>
 			{file && (
 				<img
 					className="wirteImg"

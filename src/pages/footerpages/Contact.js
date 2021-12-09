@@ -5,6 +5,11 @@ const Contact = () => {
 
     return (
 		<div className="contactBox">
+			<span className="contactTitle">
+				Keep in touch!
+			</span>
+			<span className="contactTitleMail">
+				&#9993; </span>
 			<form>
 				<input
 					name="name"
@@ -23,7 +28,8 @@ const Contact = () => {
 					className="feedback-input"
 					placeholder="Comment"
 				></textarea>
-				<input classname="contactBtn" type="submit" value="SUBMIT" />
+				<button className="contactBtn" type="submit">SUBMIT</button>
+				
 			</form>
 		</div>
 	);

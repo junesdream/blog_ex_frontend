@@ -27,7 +27,7 @@ const Sidebar = () => {
 	return (
 		<div className="sidebar">
 			<div className="sidebarItem">
-				<span className="sidebarTitle"> ABOUT US </span>
+				<span className="sidebarTitleTop"> 소리노리 </span>
 				<br />
 				<img className="sidebarImg" src={Aboutme1} alt="smile" />
 				<p>

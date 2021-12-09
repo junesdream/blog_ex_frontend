@@ -24,8 +24,11 @@ const Footer = () => {
 					<li className="bottomListItem">
 						<Link to="/about">About Us</Link>
 					</li>
-					<li className="bottomListItem">
+					{/* <li className="bottomListItem">
 						<Link to="/mycalendar">Calendar</Link>
+					</li> */}
+					<li className="bottomListItem">
+						<Link to="/kalendar">Calendar</Link>
 					</li>
 				</ul>
 			</div>

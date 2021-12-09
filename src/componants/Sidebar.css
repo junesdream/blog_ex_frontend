@@ -1,26 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Bowlby+One+SC&family=Faster+One&family=Fruktur&family=Josefin+Sans:wght@600&family=Julius+Sans+One&family=Kings&family=Luckiest+Guy&family=Mochiy+Pop+One&family=Nosifer&family=Patrick+Hand&family=Poiret+One&family=Sigmar+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Bowlby+One+SC&family=Faster+One&family=Fruktur&family=Josefin+Sans:wght@600&family=Julius+Sans+One&family=Kings&family=Luckiest+Guy&family=Mochiy+Pop+One&family=Nosifer&family=Patrick+Hand&family=Poiret+One&family=Sigmar+One&family=Varela&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=Monoton&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=Darker+Grotesque:wght@300&family=Libre+Barcode+39+Text&family=Monoton&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=Monoton&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=Darker+Grotesque:wght@300&family=Libre+Barcode+39+Text&family=Monoton&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap");
 .sidebar {
 	/* flex: 3; */
 	margin-top: 280px;
-    float: right;
+	float: right;
 	/* margin: 10px; */
 	padding: 10px;
 	/* padding-bottom: 30px; */
 	display: block;
 	align-items: center;
 	height: 70%;
-    width: 30%;
+	width: 30%;
 	margin-right: 10px;
 	/* margin-left: 10px; */
 }
 
 .sidebarImg {
-	bottom:10px;
-    width: 60%;
-    height: 50%;
+	bottom: 10px;
+	width: 60%;
+	height: 50%;
 	border-radius: 20%;
 }
 .sidebarItem {
@@ -28,6 +28,61 @@
 	flex-direction: column;
 	align-items: center;
 	/* top: 10px; */
+}
+.sidebarTitleTop {
+	margin: 5px;
+	padding: 5px;
+	width: 80%;
+	border-top: 1px solid yellowgreen;
+	border-bottom: 1px solid yellowgreen;
+	font-family: "Single Day";
+	font-size: 20px;
+	line-height: 20px;
+	text-align: center;
+	background-image: -webkit-linear-gradient(
+		left,
+		#f00,
+		#ff2b00,
+		#f50,
+		#ff8000,
+		#fa0,
+		#ffd500,
+		#ff0,
+		#d4ff00,
+		#af0,
+		#80ff00,
+		#5f0,
+		#2bff00,
+		#0f0,
+		#00ff2a,
+		#0f5,
+		#00ff80,
+		#0fa,
+		#00ffd5,
+		#0ff,
+		#00d5ff,
+		#0af,
+		#0080ff,
+		#05f,
+		#002aff,
+		#00f,
+		#2b00ff,
+		#50f,
+		#8000ff,
+		#a0f,
+		#d400ff,
+		#f0f,
+		#ff00d4,
+		#f0a,
+		#ff0080,
+		#f05,
+		#ff002b,
+		#f00
+	);
+	-webkit-animation: animatedBackground_a 5s linear infinite alternate;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: #0000;
+	background-clip: text;
 }
 
 .sidebarTitle {
@@ -38,7 +93,7 @@
 	border-bottom: 1px solid yellowgreen;
 	font-family: "Varela";
 	font-size: 12px;
-	color: rgb(61, 57, 57);;
+	color: rgb(61, 57, 57);
 	/* font-weight: 600; */
 	line-height: 20px;
 	text-align: center;
@@ -88,6 +143,13 @@
 	cursor: pointer;
 	color: yellowgreen;
 	border: 2px solid transparent;
-	border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-    border-image-slice: 1;
+	border-image: linear-gradient(
+		to bottom right,
+		#b827fc 0%,
+		#2c90fc 25%,
+		#b8fd33 50%,
+		#fec837 75%,
+		#fd1892 100%
+	);
+	border-image-slice: 1;
 }

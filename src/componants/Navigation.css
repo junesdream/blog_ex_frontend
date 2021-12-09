@@ -37,8 +37,8 @@
 } */
 
 .navLogo {
-	width: 18%;
-	height: 18%;
+	width: 60px;
+	height: 60px;
 	margin-right: 10px;
 	cursor: pointer;
 	border: 3px solid transparent;
@@ -54,8 +54,8 @@
 }
 
 .navImg {
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	border-radius: 50px;
 	object-fit: cover;
 	cursor: pointer;
@@ -105,7 +105,8 @@
 	display: flex;
 	flex-direction: column;
 	font-family: "Single Day";
-	font-size: 18px;
+	font-size: 20px;
+	font-weight: bold;
 	 background: linear-gradient(90deg, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2b, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d4ff, #0af, #007fff, #05f, #002bff, #00f, #2a00ff, #50f, #7f00ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
     color: #0000;
     -webkit-background-clip: text;
