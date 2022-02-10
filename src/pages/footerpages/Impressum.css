@@ -10,11 +10,20 @@
 }
 
 .impressumTitle {
+    margin-left: 50px;
     margin-top: 20px;
-    color:aquamarine;    
+    color:#7FFFD4;    
 }
 
 .impressumContant{
     margin-top: 25px;
     color: #A6A6A6;
 }
+
+.e-adresse a {
+    font-weight: bold;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

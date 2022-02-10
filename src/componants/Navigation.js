@@ -16,7 +16,7 @@ const Navigation = () => {
 
 	return (
 		<div className="navbar">
-			<div className="navLeft">
+			<div className="navLeft" style={{marginLeft: "-20px"}}>
 				{/* <FaMusic className="navIcon" /> */}
 				<img className="navLogo" src={Logo} alt="logo" />
 				<div className="navLogoTag">
@@ -31,27 +31,6 @@ const Navigation = () => {
 							Home
 						</Link>
 					</li>
-					{/* <li className="topListItem">Storie</li>
-					<li className="topListItem">Write</li>
-					<li className="topListItem">Faces</li> */}
-
-					{/* neue Versuch warte! */}
-
-					{/* <li className="navListItem">
-						<Link to="/" className="link">
-							Stories
-						</Link>
-					</li>
-					<li className="navListItem">
-						<Link to="/write" className="link">
-							Write
-						</Link>
-					</li>
-					<li className="navListItem">
-						<Link to="/" className="link">
-							Faces
-						</Link>
-					</li> */}
 
 					<li className="navListItem">
 						<Link to="/write" className="link">

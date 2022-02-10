@@ -7,7 +7,7 @@ import { FaFacebookSquare, FaLinkedin, FaGithubSquare, FaInstagramSquare } from 
 const Footer = () => {
     return (
 		<div className="footer">
-			<div className="bottomLeft">
+			<div className="bottomLeft" style={{marginLeft:"-10px"}}>
 				<FaFacebookSquare className="bottomIcon" />
 				<FaLinkedin className="bottomIcon" />
 				<FaGithubSquare className="bottomIcon" />

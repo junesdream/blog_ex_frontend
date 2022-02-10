@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Luckiest+Guy&family=Rubik+Mono+One&display=swap');
 
+.kalendar{
+ margin-left: 40px;
+ margin-right: 15px;
+}
+
 .kalendarContainer{
     padding: 20px;
     margin: 20px;

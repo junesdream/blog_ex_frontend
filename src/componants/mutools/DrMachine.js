@@ -220,10 +220,10 @@ const DrMachine = () => {
 		key.parentElement.style.color = "#ffffff";
 	};
 
-	const deActivatedKey = (audio) => {
-		audio.parentElement.style.backgroundColor = "#ffffff";
-		audio.parentElement.style.color = "#000000";
-	};
+	// const deActivatedKey = (audio) => {
+	// 	audio.parentElement.style.backgroundColor = "#ffffff";
+	// 	audio.parentElement.style.color = "#000000";
+	// };
 
 	const deactivateAudio = (audio) => {
 		setTimeout(() => {

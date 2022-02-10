@@ -53,9 +53,6 @@ function App() {
 				<Route path="/about" component={About}>
 					<About />
 				</Route>
-				{/* <Route path="/mycalendar" component={MyCalendar}>
-					<MyCalendar />
-				</Route> */}
 				<Route path="/kalendar" component={Kalendar}>
 					<Kalendar />
 				</Route>
@@ -67,3 +64,4 @@ function App() {
 }
 
 export default App;
+
